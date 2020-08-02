@@ -1,7 +1,29 @@
 import React, { Component } from "react";
 import "./App.css";
 
-export class App extends Component {
+class App extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      tweets: [],
+    };
+  }
+
+  onTweet = () => {
+    this.setState(
+      {
+        tweets: [
+          ...this.state.tweets,
+          document.getElementById("tweet-text").value,
+        ],
+      },
+      () => {
+        document.getElementById("tweet-text").value = "";
+      }
+    );
+  };
+
   render() {
     return (
       <div className="App">
@@ -14,18 +36,27 @@ export class App extends Component {
         </header>
         <div className="tweet-textbox">
           <textarea
-            class="form-control"
+            className="form-control"
             id="tweet-text"
             rows="3"
             placeholder="What's happening?"
           ></textarea>
         </div>
         <div className="text-right">
-          <button type="button" class="btn btn-info tweet-btn">
+          <button
+            type="button"
+            className="btn btn-info tweet-btn"
+            onClick={this.onTweet}
+          >
             Tweet
           </button>
         </div>
         <div className="grey-v-gap"></div>
+        <div className="tweets">
+          {this.state.tweets.map((t) => (
+            <div>{t}</div>
+          ))}
+        </div>
         <footer></footer>
       </div>
     );
