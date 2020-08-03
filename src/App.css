@@ -4,17 +4,18 @@
 
 .App-logo {
   height: 30px;
-  margin: 10px 10px;
+  margin: 0.5rem 0.5rem;
 }
 
 .App-header {
   text-align: left;
   border-bottom: 1px solid rgb(230, 236, 240);
-  margin-bottom: 10px;
+  margin-top: 1rem;
+  padding-left: 0.75rem;
 }
 
 .App-link {
-  color: #61dafb;
+  color: rgb(29, 161, 242);
 }
 
 .grey-v-gap {
@@ -24,6 +25,14 @@
 
 .tweet-btn {
   margin: 10px;
+  background-color: rgb(29, 161, 242);
+  font-weight: bold;
+}
+
+.tweet-btn:hover {
+  background-color: rgb(75, 181, 247);
+  border-color: rgb(102, 189, 243);
+  font-weight: bold;
 }
 
 .tweet-textbox > textarea,
@@ -35,4 +44,12 @@
 
 .padding-0 {
   padding: 0;
+}
+
+a:hover {
+  color: #fff;
+  background-color: rgb(29, 161, 242);
+  border-color: rgb(29, 161, 242);
+  border-radius: 50px;
+  font-weight: bold;
 }
