@@ -29,7 +29,8 @@
   font-weight: bold;
 }
 
-.tweet-btn:hover {
+.tweet-btn:hover,
+.tweet-btn:active {
   background-color: rgb(75, 181, 247);
   border-color: rgb(102, 189, 243);
   font-weight: bold;
@@ -52,4 +53,8 @@ a:hover {
   border-color: rgb(29, 161, 242);
   border-radius: 50px;
   font-weight: bold;
+}
+
+.tweets .tweet {
+  padding: 0.75rem;
 }

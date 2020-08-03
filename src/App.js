@@ -1,5 +1,7 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from "react";
 import "./App.css";
+import Tweets from "./components/Tweets";
 
 class App extends Component {
   constructor(props) {
@@ -90,10 +92,8 @@ class App extends Component {
             </button>
           </div>
           <div className="grey-v-gap"></div>
-          <div className="tweets">
-            {this.state.tweets.map((t) => (
-              <div>{t}</div>
-            ))}
+          <div className="tweets w-100">
+            <Tweets tweets={this.state.tweets} />
           </div>
           <footer></footer>
         </div>
