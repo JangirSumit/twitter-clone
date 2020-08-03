@@ -1,8 +1,5 @@
-.App {
-  text-align: center;
-  margin: auto;
-  width: 50vw;
-  border: 1px solid rgb(230, 236, 240);
+.panels {
+  margin: 5px;
 }
 
 .App-logo {
@@ -26,11 +23,16 @@
 }
 
 .tweet-btn {
-  border-radius: 30px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 10px;
 }
 
-.tweet-textbox > textarea {
+.tweet-textbox > textarea,
+.tweet-textbox > textarea:focus {
   border: 0;
+  outline: 0;
+  box-shadow: none;
+}
+
+.padding-0 {
+  padding: 0;
 }
