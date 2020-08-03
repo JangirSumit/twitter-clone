@@ -7,7 +7,7 @@ class Login extends Component {
         <h1>Login</h1>
         <br />
         <div className="form-group">
-          <label for="exampleInputEmail1">Email address</label>
+          <label for="exampleInputEmail1">Email Id</label>
           <input
             type="email"
             className="form-control"
@@ -25,6 +25,9 @@ class Login extends Component {
             className="form-control"
             id="exampleInputPassword1"
           />
+          <small id="emailHelp" className="form-text text-muted">
+            Please keep strong password.
+          </small>
         </div>
         <button type="submit" className="btn btn-primary">
           Submit

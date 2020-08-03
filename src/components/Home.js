@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from "react";
 import Tweets from "./Tweets";
+import Trending from "./Trending";
 
 class Home extends Component {
   constructor(props) {
@@ -97,12 +98,13 @@ class Home extends Component {
           <footer></footer>
         </div>
         <div className="col-md-3">
-          <div className="d-flex align-items-start">
+          <div className="w-100 align-top">
             <input
-              className="form-control rounded-pill p-2"
+              className="form-control rounded-pill p-2 search-text"
               type="text"
               placeholder="Search Twitter"
             />
+            <Trending />
           </div>
         </div>
       </div>
